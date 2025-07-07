@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>COUNTER</h1>
+    <h1 class="counter-actions">
+        <button class="btn btn-secondary" (click)="updateCounter('decrement')"><i class="fa fa-minus"></i></button> |
+        <button class="btn btn-secondary" (click)="updateCounter('increment')"><i class="fa fa-plus"></i></button> |
+        <button class="btn btn-secondary" (click)="updateCounter('reset')">reset</button>
+    </h1>
+    <div class="counter-display">
+        @for(item of counterList; track item){
+        <p class="counter-list-item">{{item}}</p>
+        }
+    </div>
+</div>
